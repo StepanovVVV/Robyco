@@ -1,0 +1,209 @@
+@media (max-width: 910px) {
+    /* ____________ s1_looking ____________ */
+    .looking::after {
+        display: block;
+    }
+
+    .looking__wrapper p {
+        color: var(--color-7);
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* ____________ header ____________ */
+    .header {
+        position: fixed;
+        width: 100%;
+        background-color: var(--color-7);
+        top: 0;
+        left: 0;
+        height: 50px;
+        padding: 0 15px;
+        z-index: 3;
+    }
+
+    .header__list {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        background: var(--color-7);
+        transform: translateY(-100%);
+        transition: transform 0.4s ease 0s;
+    }
+
+    .menu.active {
+        top: 49px;
+        transform: translateY(0);
+    }
+
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-1);
+        transition: all 0.4s ease 0s;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu-btn.active span:nth-of-type(1) {
+        opacity: 0;
+    }
+
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+    }
+
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+    }
+
+    .header__list li+li {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .header__list li .arrows {
+        padding-right: 15px;
+        margin-right: 0;
+    }
+
+    /* ____________ s1_looking ____________ */
+    .looking {
+        margin-top: 50px;
+    }
+
+    /* ____________ s2_direction ____________*/
+    .direction {
+        padding: 0;
+    }
+
+    .direction__items {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .direction__container {
+        margin-top: 0;
+    }
+
+    /* ____________ s3_services ____________*/
+    .services {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .services__items {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .services__img {
+        height: 100%;
+    }
+
+    /* ____________ footer ____________ */
+    .footer__wrapper {
+        grid-template-columns: auto;
+    }
+
+    .footer__wrapper .footer__item {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    .footer__item p {
+        text-align: center;
+    }
+
+    .footer__nav {
+        align-items: center;
+    }
+
+    /* _____________________________________________________ page_blog ________________________________________________ */
+    .read,
+    .blog-info {
+        margin-top: 50px;
+    }
+
+    /* _________________________________________________________ page_article ___________________________________________ */
+    .blog-info__title {
+        text-align: center;
+    }
+
+    .blog__arrows::after {
+        transform: translate(0, -25px) rotate(180deg);
+    }
+
+    .blog-info__wrapper {
+        padding-bottom: 100px;
+    }
+
+    .blog-info__img img {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 479.98px) {
+    /* ____________ title ____________ */
+    .main-title {
+        font-size: 46px;
+    }
+
+    /* ____________ s1_looking _____________ */
+    .looking__wrapper {
+        padding: 90px 0 90px;
+    }
+
+    .footer__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* _________________________________________________________ page_article ___________________________________________ */
+    .blog-info__title {
+        font-size: 38px;
+    }
+
+    .blog-info__wrapper p {
+        margin-top: 20px;
+    }
+
+    .blog-info__wrapper h3,
+    .blog-info__wrapper ul,
+    .blog-info__wrapper ul:last-child li+li {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    /* _________________________________________________________ page_article ___________________________________________ */
+    .blog-info__title {
+        font-size: 28px;
+    }
+}
